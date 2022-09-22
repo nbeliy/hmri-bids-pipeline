@@ -9,7 +9,7 @@ Official package to work with bidsified datasets.
 The package can be very slow in current state, hopely will change later.
 
 Some additional utility scripts:
-[bids-processing-tools](git@gitlab.uliege.be:CyclotronResearchCentre/Methods/BIDS_Tools/bids-processing-tools.git)
+[bids-processing-tools](https://github.com/nbeliy/bids-processing-tools)
 `git clone bids-processing-tools`
 
 Other package may be required, see dedicated `README.md` files.
