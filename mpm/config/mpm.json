@@ -1,0 +1,115 @@
+{
+  "Reorient": {
+    "images": {
+      "query": {
+        "modality": ["anat", "fmap"],
+        "extension": [".nii", ".nii.gz"]
+      }
+    },
+    "reference": {
+      "query": {
+        "modality": "anat",
+        "acq": "MTw",
+        "echo": "2",
+        "part": "mag",
+        "suffix": "MPM",
+        "extension": [".nii", ".nii.gz"]
+      },
+      "number": 1
+    }
+  },
+  "CreateMap": {
+    "B1_map_echo1": {
+      "query": {
+        "modality": "fmap",
+        "suffix": "TB1EPI",
+        "echo": "1",
+        "extension": ".nii" 
+      },
+      "number": 11
+    },
+    "B1_map_echo2": {
+      "query": {
+        "modality": "fmap",
+        "suffix": "TB1EPI",
+        "echo": "2",
+        "extension": ".nii"
+      },
+      "number": 11
+    },
+    "B0_map_mag": {
+      "query": {
+        "modality": "fmap",
+        "suffix": ["magnitude1", "magnitude2"],
+        "extension": ".nii"
+      },
+      "number": 2
+    },
+    "B0_map_phase": {
+      "query": {
+        "modality": "fmap",
+        "suffix": "phasediff",
+        "extension": ".nii"
+      },
+      "number": 1
+    },
+    "MTw_images": {
+      "query": {
+        "modality": "anat",
+        "suffix":"MPM",
+        "acq": "MTw",
+        "part": "mag",
+        "extension": ".nii"
+      },
+      "number": 6
+    },
+    "PDw_images": {
+      "query": {
+        "modality": "anat",
+        "suffix":"MPM",
+        "acq": "PDw",
+        "part": "mag",
+        "extension": ".nii"
+      },
+      "number": 8
+    },
+    "T1w_images": {
+      "query": {
+        "modality": "anat",
+        "suffix":"MPM",
+        "acq": "T1w",
+        "part": "mag",
+        "extension": ".nii"
+      },
+      "number": 8
+    }
+  },
+  "Dartell": {
+    "reference": {
+      "query": {
+        "modality": "MPMmaps",
+        "suffix": "MPMMTsat",
+        "extension": ".nii"
+      },
+      "number": 1
+    },
+    "maps": {
+      "query": {
+        "modality": "MPMmaps",
+        "suffix": ["MPMMTsat", "MPMPD", "MPMR1", "MPMR2sOLS"],
+        "extension": ".nii"
+      },
+      "number": 4
+    }
+  },
+  "Segmentation": {
+    "maps": {
+      "query": {
+        "modality": "MPMmaps",
+        "suffix": ["MPMMTsat", "MPMPD", "MPMR1", "MPMR2sOLS"],
+        "extension": ".nii"
+      },
+      "number": 4
+    }
+  }
+}
